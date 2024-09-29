@@ -1,4 +1,4 @@
-import UrlShortenerService from "@/services/UrlShortenerService";
+import { UrlShortenerService } from "@/services/UrlShortenerService";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {

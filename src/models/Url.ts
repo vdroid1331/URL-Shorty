@@ -1,8 +1,8 @@
-import mongoose, { Document, Model } from "mongoose";
+import mongoose, { Document, Model, Schema } from "mongoose";
 
 const urlSchema = new mongoose.Schema(
   {
-    orignalUrl: {
+    originalUrl: {
       type: String,
       required: true,
       unique: true,
@@ -19,7 +19,7 @@ const urlSchema = new mongoose.Schema(
 );
 
 export interface IUrl extends Document {
-  orignalUrl: string;
+  originalUrl: string;
   shortUrl: string;
 }
 
